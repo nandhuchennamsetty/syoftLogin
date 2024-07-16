@@ -8,7 +8,7 @@ const HomePage = () => {
   const parsedData = JSON.parse(storedData);
 
   // Extract user data
-  // ...
+  
   const user = parsedData.user_data[0];
 
   return (
