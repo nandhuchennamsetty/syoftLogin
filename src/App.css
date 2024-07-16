@@ -258,4 +258,5 @@ input[type="checkbox"]:checked + label:after {
 .error-message {
     color: rgb(242, 237, 237);
     margin-top: 15px; 
+    
 }

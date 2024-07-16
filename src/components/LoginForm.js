@@ -18,6 +18,7 @@ const LoginForm = ({ mode, onSubmit }) => {
 
   useEffect(() => {
     // Clear messages when mode changes
+    // ...
     setSuccessMessage("");
     setErrorMessage("");
     
