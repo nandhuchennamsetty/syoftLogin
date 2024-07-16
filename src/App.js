@@ -7,8 +7,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
-
+// ..
 const App = () => {
   return (
     <div>

@@ -8,7 +8,7 @@ const LoginComponent = ({ mode: initialMode, onSubmit }) => {
   const toggleMode = () => {
     setMode((prevMode) => (prevMode === "login" ? "signup" : "login"));
   };
-
+// ...
   return (
     <div className="app">
       <div

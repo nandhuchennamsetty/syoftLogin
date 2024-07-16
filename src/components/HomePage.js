@@ -7,7 +7,7 @@ const HomePage = () => {
   const storedData = localStorage.getItem("user");
   const parsedData = JSON.parse(storedData);
 
-  // Extract user data
+  // Extract user data...
   
   const user = parsedData.user_data[0];
 

@@ -17,7 +17,7 @@ const LoginForm = ({ mode, onSubmit }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Clear messages when mode changes
+    // Clear messages when mode changes....
     
     setSuccessMessage("");
     setErrorMessage("");
