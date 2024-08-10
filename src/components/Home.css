@@ -1,12 +1,46 @@
-
 .gradient-custom {
-/* fallback for old browsers */
-background: #f6d365;
+  /* fallback for old browsers */
+  background: #f6d365;
 
-/* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right bottom,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
 
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right bottom,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
 }
 /* ... */
+.nav-container {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: rgb(42, 42, 244);
+  justify-content: space-between;
+  align-items: center;
+}
+.company-heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  padding: 5px;
+}
+.group-container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 20%; */
+}
+.btn-container {
+  font-family: "Courier New", Courier, monospace;
+  border-radius: none;
+  color:  aliceblue;
+  background-color: transparent;
+  border:none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

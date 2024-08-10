@@ -2,18 +2,39 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
+
+
 
 const HomePage = () => {
   const storedData = localStorage.getItem("user");
   const parsedData = JSON.parse(storedData);
+  const navigate = useNavigate();
 
   // Extract user data...
   
   const user = parsedData.user_data[0];
 
   return (
-    <div >
+    <div>
       <section className="vh-100" style={{ backgroundColor: "#f4f5f7" }}>
+        <div className="nav-container">
+          <div className="logo">
+            <h1 className="company-heading">Syoft</h1>
+          </div>
+          <div className="group-container">
+            <div>
+              <button className="btn-container">About</button>
+            </div>
+            <div>
+              <button className="btn-container">Contact</button>
+            </div>
+            <div>
+              <button className="btn-container" onClick={()=>{navigate("/")}}>Logout</button>
+              
+            </div>
+          </div>
+        </div>
         <div className="container py-5 h-100 d-flex justify-content-center align-items-center">
           <div className="row justify-content-center align-items-center w-100">
             <div className="col-lg-6 mb-4">

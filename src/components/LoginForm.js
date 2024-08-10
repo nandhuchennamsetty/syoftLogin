@@ -26,7 +26,17 @@ const LoginForm = ({ mode, onSubmit }) => {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    setFormData({ ...formData, [id]: value });
+    if ((id === "mobilenumber")) {
+      if (/^\d{0,10}$/.test(value)) {
+        setFormData({
+          ...formData,
+          mobilenumber: value,
+        });
+      }
+    } else {
+        setFormData({ ...formData, [id]: value });
+
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -87,7 +97,7 @@ const LoginForm = ({ mode, onSubmit }) => {
         user_email: formData.email,
         user_phone: formData.mobilenumber,
         user_password: formData.createpassword,
-        user_lastname: "ni",
+        user_lastname: "N",
         user_city: "Hyderabad",
         user_zipcode: "500072",
       };
@@ -183,8 +193,10 @@ const LoginForm = ({ mode, onSubmit }) => {
             disabled={mode === "login"}
             onChange={handleChange}
             value={formData.mobilenumber}
+            inputProps={{
+              maxLength: 10, // Limiting input length to 10 digits
+            }}
           />
-          
         </div>
       </div>
       {errorMessage && <div className="error-message">{errorMessage}</div>}
